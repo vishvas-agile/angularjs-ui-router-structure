@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="Demo" lang="en">
+
+<head>
+    <title>Angular.js Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Pulling Awesome Font -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- bower:js -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/ui-router/release/angular-ui-router.js"></script>
+
+    <!-- application main:js -->
+    <script type="text/javascript" src="scripts/app.js"></script>
+
+    <!-- modules:js -->
+    <script type="text/javascript" src="pages/pages.module.js"></script>
+
+    <!-- directives:js -->
+    <script type="text/javascript" src="scripts/directives/topnav/topnav.js"></script>
+    <script type="text/javascript" src="scripts/directives/footnav/footnav.js"></script>
+
+    <!-- services:js -->
+    <script type="text/javascript" src="scripts/services/auth.js"></script>
+
+    <!-- factories:js -->
+    <script type="text/javascript" src="scripts/factory/UserFactory.js"></script>
+
+    <!-- pages modules & controllers:js -->
+    <script type="text/javascript" src="pages/login/login.module.js"></script>
+    <script type="text/javascript" src="pages/login/login.js"></script>
+
+    <script type="text/javascript" src="pages/dashboard/dashboard.module.js"></script>
+    <script type="text/javascript" src="pages/dashboard/dashboard.js"></script>
+    <script type="text/javascript" src="pages/about/about.module.js"></script>
+    <script type="text/javascript" src="pages/about/about.js"></script>
+</head>
+
+<body>
+    <div ui-view></div>
+</body>
+
+</html>
